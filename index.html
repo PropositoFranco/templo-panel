@@ -14,7 +14,6 @@
   }
   body{font-family:'DM Sans',sans-serif;background:var(--s50);color:var(--s700);min-height:100vh}
   ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-thumb{background:#cbd5e1;border-radius:3px}
-
   #topbar{background:var(--white);border-bottom:1px solid var(--s100);padding:0 28px;height:60px;
     display:flex;align-items:center;justify-content:space-between;
     position:sticky;top:0;z-index:200;box-shadow:0 1px 8px rgba(0,0,0,.06)}
@@ -24,14 +23,11 @@
   .org{font-weight:800;font-size:15px;color:var(--s900)}
   .sub{font-size:11px;color:var(--s400)}
   .topbar-right{display:flex;gap:8px;align-items:center}
-
   #tabs{background:var(--white);border-bottom:1px solid var(--s100);padding:0 28px;display:flex}
   .tab{padding:14px 20px;font-size:14px;font-weight:500;color:var(--s500);cursor:pointer;
     border-bottom:2.5px solid transparent;transition:all .15s;white-space:nowrap}
   .tab.active{color:var(--indigo);font-weight:700;border-bottom-color:var(--indigo)}
-
   #main{padding:24px 28px;max-width:1200px;margin:0 auto}
-
   .btn{padding:9px 18px;border-radius:9px;font-size:14px;font-weight:600;cursor:pointer;
     border:none;transition:opacity .15s;white-space:nowrap;display:inline-flex;align-items:center;gap:5px}
   .btn:hover{opacity:.85}.btn:disabled{opacity:.4;cursor:not-allowed}
@@ -40,19 +36,16 @@
   .btn-green{background:var(--green);color:#fff}
   .btn-red{background:var(--red);color:#fff}
   .btn-sm{padding:5px 11px;font-size:12px;border-radius:7px}
-
   #alert-badge{background:#fef2f2;color:#b91c1c;border:1px solid #fca5a5;
     padding:5px 13px;border-radius:20px;font-size:12px;font-weight:700;cursor:pointer;display:none}
   #saving-ind{font-size:12px;color:var(--s400);display:none;align-items:center;gap:6px}
   .dot{width:7px;height:7px;border-radius:50%;background:var(--indigo);animation:pulse 1s infinite}
-
   .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:14px;margin-bottom:20px}
   .stat-card{background:var(--white);border-radius:16px;padding:20px 22px;
     border:1px solid var(--s100);box-shadow:0 1px 4px rgba(0,0,0,.05)}
   .stat-label{font-size:11px;color:var(--s400);font-weight:600;text-transform:uppercase;letter-spacing:.4px}
   .stat-value{font-size:30px;font-weight:800;line-height:1.1;margin-top:6px}
   .stat-sub{font-size:12px;color:var(--s500);margin-top:4px}
-
   .card{background:var(--white);border-radius:16px;padding:20px 22px;
     border:1px solid var(--s100);box-shadow:0 1px 4px rgba(0,0,0,.05);margin-bottom:16px}
   .card-title{font-size:15px;font-weight:700;color:var(--s900);margin-bottom:14px}
@@ -60,7 +53,6 @@
   .prog-meta{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px}
   .prog-bg{height:7px;background:var(--s100);border-radius:4px;overflow:hidden}
   .prog-bar{height:100%;border-radius:4px;transition:width .6s ease}
-
   .money-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}
   .money-card{border-radius:16px;padding:18px 20px}
   .mc-green{background:#f0fdf4;border:1px solid #bbf7d0}
@@ -69,14 +61,12 @@
   .mc-green .money-lbl{color:#166534}.mc-amber .money-lbl{color:#92400e}
   .money-val{font-size:26px;font-weight:800;margin-top:6px}
   .mc-green .money-val{color:#15803d}.mc-amber .money-val{color:#b45309}
-
   .alert-row{display:flex;align-items:center;justify-content:space-between;
     padding:14px 18px;border-radius:12px;margin-bottom:8px}
   .ar-red{background:#fef2f2;border:1px solid #fca5a5}
   .ar-yellow{background:#fffbeb;border:1px solid #fde68a}
   .ar-name{font-weight:700;font-size:15px;color:var(--s900)}
   .ar-sub{font-size:12px;color:var(--s500);margin-top:2px}
-
   .table-wrap{background:var(--white);border-radius:16px;border:1px solid var(--s100);
     box-shadow:0 1px 4px rgba(0,0,0,.05);overflow:hidden}
   .table-header{padding:16px 20px;border-bottom:1px solid var(--s100);display:flex;gap:10px;align-items:center;flex-wrap:wrap}
@@ -85,16 +75,13 @@
     letter-spacing:.5px;text-transform:uppercase;border-bottom:2px solid var(--s100)}
   td{padding:12px 14px;border-bottom:1px solid var(--s50);font-size:13.5px;vertical-align:middle}
   tr:hover td{background:#fafbff}
-
   .badge{display:inline-flex;align-items:center;gap:4px;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700}
   .b-paid{background:#f0fdf4;color:#15803d;border:1px solid #bbf7d0}
   .b-vencido{background:#fef2f2;color:#b91c1c;border:1px solid #fca5a5}
   .b-pendiente{background:#fffbeb;color:#b45309;border:1px solid #fde68a}
-
   .chip{padding:5px 12px;border-radius:20px;font-size:12px;font-weight:600;cursor:pointer;
     border:1px solid var(--s200);background:var(--s50);color:var(--s500);transition:all .15s}
   .chip.active{background:var(--indigo);color:#fff;border-color:var(--indigo)}
-
   .modal-overlay{position:fixed;inset:0;background:rgba(15,23,42,.55);z-index:1000;
     display:flex;align-items:center;justify-content:center;padding:20px;animation:fadeIn .18s}
   .modal-box{background:#fff;border-radius:18px;padding:28px;width:520px;max-width:100%;
@@ -110,13 +97,13 @@
     font-size:14px;color:var(--s900);font-family:inherit;outline:none;transition:border-color .15s;width:100%}
   .ff input:focus,.ff select:focus,.ff textarea:focus{border-color:var(--indigo)}
   .modal-footer{display:flex;gap:8px;justify-content:flex-end;margin-top:20px}
-
+  .info-hint{background:#eff6ff;border-left:3px solid var(--indigo);border-radius:0 8px 8px 0;
+    padding:8px 12px;font-size:12px;color:#3730a3;margin-top:10px}
   #toast-container{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;gap:8px}
   .toast{padding:10px 18px;border-radius:10px;font-size:13px;font-weight:500;color:#fff;
     box-shadow:0 4px 20px rgba(0,0,0,.18);animation:slideUp .22s ease;max-width:320px}
   .t-success{background:var(--green)}.t-error{background:var(--red)}
   .t-info{background:var(--indigo)}.t-warn{background:var(--yellow)}
-
   .spinner{width:36px;height:36px;border-radius:50%;border:3px solid var(--s200);
     border-top-color:var(--indigo);animation:spin .8s linear infinite;margin:0 auto}
   .loading-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;padding:60px 0;color:var(--s400);font-size:14px}
@@ -124,8 +111,6 @@
   .empty .ei{font-size:48px;margin-bottom:12px}
   .all-ok{background:#f0fdf4;border-radius:16px;padding:40px;text-align:center;border:1px solid #bbf7d0}
   .pagination{padding:14px 20px;display:flex;align-items:center;gap:10px;border-top:1px solid var(--s100)}
-  .info-box{background:var(--s50);border-radius:10px;padding:12px 14px;font-size:13px;color:var(--s500);margin-top:10px;line-height:1.6}
-
   @keyframes spin{to{transform:rotate(360deg)}}
   @keyframes fadeIn{from{opacity:0}to{opacity:1}}
   @keyframes slideUp{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
@@ -158,8 +143,8 @@
 
 <div id="main">
   <div id="tab-dashboard"></div>
-  <div id="tab-members"  style="display:none"></div>
-  <div id="tab-alerts"   style="display:none"></div>
+  <div id="tab-members" style="display:none"></div>
+  <div id="tab-alerts"  style="display:none"></div>
 </div>
 
 <div id="modal" class="modal-overlay" style="display:none" onclick="if(event.target===this)closeModal()">
@@ -175,257 +160,140 @@
 <div id="toast-container"></div>
 
 <script>
-// ══════════════════════════════════════════════
-// CONFIG
-// ══════════════════════════════════════════════
-// ⚠️ PASO 1: Pega aquí tu URL de Google Apps Script Web App
-// Cómo obtenerlo: Apps Script → Implementar → Nueva implementación →
-//   Tipo: Aplicación web | Ejecutar como: Yo | Acceso: Cualquier persona, incluso anónima
-//   → Clic "Implementar" → copia el URL que termina en /exec
-const GAS = 'https://script.google.com/macros/s/AKfycbwG6h1vP-ihNpPd_6Petv3bJ_3jHfW5rqlBmiQ-4bGMpgYV9tGbMQRIEin9KP_VyIpejg/exec';
+const GAS = 'https://script.google.com/macros/s/AKfycbyOkuEuQJLwnfzOggXMN6w2ltMylv2tc2F5ejBNHeSDUPPRlLRPDlNo4EBWGAt7R4pGmQ/exec';
 
-// ══════════════════════════════════════════════
-// STATE
-// ══════════════════════════════════════════════
 let miembros  = [];
 let resumen   = {};
-let activeTab = "dashboard";
-let filtro    = "all";
-let busqueda  = "";
+let activeTab = 'dashboard';
+let filtro    = 'all';
+let busqueda  = '';
 let pagina    = 0;
 const POR_PAG = 50;
 
-// ══════════════════════════════════════════════
-// API — usa exactamente tus acciones en español
-// ══════════════════════════════════════════════
-// ──────────────────────────────────────────────
-// gasGet: GET para listar/resumen
-// Apps Script redirige a una URL diferente, por eso redirect:"follow"
-// ──────────────────────────────────────────────
 async function gasGet(accion) {
-  if (GAS === "PEGA_AQUI_TU_URL_exec") return { error: "Falta configurar el URL del Web App. Abre el HTML y reemplaza PEGA_AQUI_TU_URL_exec con tu URL /exec de Google Apps Script." };
-  const url = `${GAS}?accion=${accion}`;
-  const res = await fetch(url, { redirect: "follow" });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const res = await fetch(GAS + '?accion=' + accion, { redirect: 'follow' });
+  if (!res.ok) throw new Error('HTTP ' + res.status);
   return res.json();
 }
-
-// ──────────────────────────────────────────────
-// gasPost: POST para agregar/actualizar/eliminar/pagar
-// Content-Type: text/plain evita el preflight OPTIONS que bloquea CORS
-// redirect: follow es necesario porque GAS redirige internamente
-// ──────────────────────────────────────────────
 async function gasPost(body) {
-  if (GAS === "PEGA_AQUI_TU_URL_exec") return { error: "Falta configurar el URL del Web App." };
   const res = await fetch(GAS, {
-    method:   "POST",
-    redirect: "follow",
-    headers:  { "Content-Type": "text/plain;charset=utf-8" },
-    body:     JSON.stringify(body),
+    method: 'POST', redirect: 'follow',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(body),
   });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  if (!res.ok) throw new Error('HTTP ' + res.status);
   return res.json();
 }
 
-// ══════════════════════════════════════════════
-// INIT
-// ══════════════════════════════════════════════
 async function init() {
-  renderLoading("dashboard");
-
-  // ── Validación: ¿ya pegaste el URL? ──
-  if (GAS === "PEGA_AQUI_TU_URL_exec") {
-    document.getElementById("tab-dashboard").innerHTML = `
-      <div style="background:#fef3c7;border:1.5px solid #f59e0b;border-radius:16px;padding:32px;text-align:center;margin-top:20px">
-        <div style="font-size:40px;margin-bottom:12px">⚙️</div>
-        <h3 style="font-size:18px;font-weight:700;color:#92400e;margin-bottom:8px">Falta configurar el URL del Web App</h3>
-        <p style="color:#78350f;font-size:14px;line-height:1.7;max-width:480px;margin:0 auto">
-          Abre este archivo HTML en un editor de texto, busca la línea que dice<br>
-          <code style="background:#fde68a;padding:2px 8px;border-radius:4px;font-size:13px">PEGA_AQUI_TU_URL_exec</code><br>
-          y reemplázala con tu URL de Google Apps Script que termina en <strong>/exec</strong>
-        </p>
-        <div style="margin-top:16px;background:#fff;border-radius:10px;padding:14px;font-size:13px;color:#44403c;text-align:left;max-width:520px;margin:16px auto 0">
-          <strong>Pasos:</strong><br>
-          1. Abre <a href="https://script.google.com" target="_blank" style="color:var(--indigo)">script.google.com</a><br>
-          2. Abre tu proyecto → <strong>Implementar → Nueva implementación</strong><br>
-          3. Tipo: <em>Aplicación web</em> | Ejecutar como: <em>Yo</em> | Acceso: <em>Cualquier persona, incluso anónima</em><br>
-          4. Copia el URL que termina en <strong>/exec</strong> y pégalo en este archivo
-        </div>
-      </div>`;
-    return;
-  }
-
+  renderLoading('dashboard');
   try {
-    const [rLista, rResumen] = await Promise.all([
-      gasGet("listar"),
-      gasGet("resumen"),
-    ]);
+    const [rLista, rResumen] = await Promise.all([gasGet('listar'), gasGet('resumen')]);
     if (rLista.error)   throw new Error(rLista.error);
     if (rResumen.error) throw new Error(rResumen.error);
     miembros = rLista.miembros || [];
     resumen  = rResumen;
   } catch(e) {
-    toast("❌ Error al conectar: " + e.message, "error");
+    toast('❌ Error al conectar: ' + e.message, 'error');
     miembros = []; resumen = {};
   }
   updateAlertBadge();
   renderTab(activeTab);
 }
+async function recargar() { toast('Actualizando datos...', 'info'); await init(); }
 
-async function recargar() {
-  toast("Actualizando datos...", "info");
-  await init();
-}
-
-// ══════════════════════════════════════════════
-// TABS
-// ══════════════════════════════════════════════
-document.querySelectorAll(".tab").forEach(el => {
-  el.addEventListener("click", () => switchTab(el.dataset.tab));
+document.querySelectorAll('.tab').forEach(el => {
+  el.addEventListener('click', () => switchTab(el.dataset.tab));
 });
-
 function switchTab(name) {
-  document.querySelectorAll(".tab").forEach(t => t.classList.toggle("active", t.dataset.tab === name));
-  activeTab = name; pagina = 0;
-  renderTab(name);
+  document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t.dataset.tab === name));
+  activeTab = name; pagina = 0; renderTab(name);
 }
-
 function renderTab(name) {
-  ["dashboard","members","alerts"].forEach(t =>
-    document.getElementById("tab-"+t).style.display = t === name ? "" : "none"
-  );
-  if (name === "dashboard") renderDashboard();
-  if (name === "members")   renderMembers();
-  if (name === "alerts")    renderAlerts();
+  ['dashboard','members','alerts'].forEach(t =>
+    document.getElementById('tab-'+t).style.display = t === name ? '' : 'none');
+  if (name === 'dashboard') renderDashboard();
+  if (name === 'members')   renderMembers();
+  if (name === 'alerts')    renderAlerts();
 }
-
 function renderLoading(tab) {
-  document.getElementById("tab-"+tab).innerHTML =
-    `<div class="loading-wrap"><div class="spinner"></div><span>Conectando con Google Sheets...</span></div>`;
+  document.getElementById('tab-'+tab).innerHTML =
+    '<div class="loading-wrap"><div class="spinner"></div><span>Conectando con Google Sheets...</span></div>';
 }
 
-// ══════════════════════════════════════════════
-// ESTADO — lee el campo "estado" que ya calcula tu GAS
-// ══════════════════════════════════════════════
 function getEstado(m) {
-  const e = String(m.estado || "").toLowerCase();
-  if (e.includes("pagado"))   return "paid";
-  if (e.includes("vencido"))  return "vencido";
-  return "pendiente";
+  const e = String(m.estado || '').toLowerCase();
+  if (e.includes('pagado'))  return 'paid';
+  if (e.includes('vencido')) return 'vencido';
+  return 'pendiente';
 }
-
 function badgeHTML(m) {
   const e = getEstado(m);
-  if (e === "paid")     return `<span class="badge b-paid">✅ Pagado</span>`;
-  if (e === "vencido")  return `<span class="badge b-vencido">🔴 Vencido</span>`;
-  return `<span class="badge b-pendiente">⏳ Pendiente</span>`;
+  if (e === 'paid')    return '<span class="badge b-paid">✅ Al corriente</span>';
+  if (e === 'vencido') return '<span class="badge b-vencido">🔴 Vencido</span>';
+  return '<span class="badge b-pendiente">⏳ Por vencer</span>';
 }
-
 function updateAlertBadge() {
-  const n = miembros.filter(m => {
-    const e = getEstado(m);
-    return e === "vencido" || e === "pendiente";
-  }).length;
-  document.getElementById("alert-badge").style.display = n > 0 ? "flex" : "none";
-  document.getElementById("alert-count").textContent = n;
+  const n = miembros.filter(m => { const e = getEstado(m); return e === 'vencido' || e === 'pendiente'; }).length;
+  document.getElementById('alert-badge').style.display = n > 0 ? 'flex' : 'none';
+  document.getElementById('alert-count').textContent = n;
 }
 
-// ══════════════════════════════════════════════
-// DASHBOARD — usa resumen que viene de tu GAS
-// ══════════════════════════════════════════════
 function renderDashboard() {
-  const r = resumen;
-  const total    = r.total    || miembros.length;
-  const pagados  = r.pagados  || 0;
-  const vencidos = r.vencidos || 0;
-  const proximos = r.proximos || 0;
-  const cobrado  = r.cobrado_mes  || 0;
-  const porCobrar= r.por_cobrar   || 0;
+  const r        = resumen;
+  const total    = r.total       || miembros.length;
+  const pagados  = r.pagados     || 0;
+  const vencidos = r.vencidos    || 0;
+  const proximos = r.proximos    || 0;
+  const cobrado  = r.cobrado_mes || 0;
+  const porCobrar= r.por_cobrar  || 0;
   const pct = n => total > 0 ? Math.round(n/total*100) : 0;
+  const alertMs  = miembros.filter(m => { const e = getEstado(m); return e === 'vencido' || e === 'pendiente'; });
 
-  const alertMs = miembros.filter(m => {
-    const e = getEstado(m); return e === "vencido" || e === "pendiente";
-  });
-
-  document.getElementById("tab-dashboard").innerHTML = `
-    <div class="stats-grid">
-      ${statCard("Total miembros","👥",total,"var(--s900)","registrados")}
-      ${statCard("Pagados","✅",pagados,"#15803d",fmt(cobrado))}
-      ${statCard("Próximos","⚠️",proximos,"#b45309","a vencer pronto")}
-      ${statCard("Vencidos","🚨",vencidos,"#b91c1c","requieren atención")}
-    </div>
-
-    <div class="card">
-      <div class="card-title">Estado de pagos del mes — Día ${r.dia_actual || new Date().getDate()}</div>
-      ${progRow("Pagados",     pagados,  pct(pagados),  "#22c55e")}
-      ${progRow("Próximos",    proximos, pct(proximos), "#f59e0b")}
-      ${progRow("Vencidos",    vencidos, pct(vencidos), "#ef4444")}
-    </div>
-
-    <div class="money-grid">
-      <div class="money-card mc-green">
-        <div class="money-lbl">Cobrado este mes</div>
-        <div class="money-val">${fmt(cobrado)}</div>
-      </div>
-      <div class="money-card mc-amber">
-        <div class="money-lbl">Por cobrar</div>
-        <div class="money-val">${fmt(porCobrar)}</div>
-      </div>
-    </div>
-
-    ${alertMs.length === 0
+  document.getElementById('tab-dashboard').innerHTML =
+    '<div class="stats-grid">' +
+      statCard('Total miembros','👥',total,'var(--s900)','registrados') +
+      statCard('Al corriente','✅',pagados,'#15803d',fmt(cobrado)) +
+      statCard('Por vencer','⚠️',proximos,'#b45309','próximos 7 días') +
+      statCard('Vencidos','🚨',vencidos,'#b91c1c','requieren atención') +
+    '</div>' +
+    '<div class="card">' +
+      '<div class="card-title">Estado de pagos — ciclos de 30 días</div>' +
+      progRow('Al corriente', pagados,  pct(pagados),  '#22c55e') +
+      progRow('Por vencer',   proximos, pct(proximos), '#f59e0b') +
+      progRow('Vencidos',     vencidos, pct(vencidos), '#ef4444') +
+    '</div>' +
+    '<div class="money-grid">' +
+      '<div class="money-card mc-green"><div class="money-lbl">Cobrado</div><div class="money-val">' + fmt(cobrado) + '</div></div>' +
+      '<div class="money-card mc-amber"><div class="money-lbl">Por cobrar</div><div class="money-val">' + fmt(porCobrar) + '</div></div>' +
+    '</div>' +
+    (alertMs.length === 0
       ? (total === 0
-        ? `<div class="empty"><div class="ei">👥</div><h3>Sin miembros todavía</h3>
-           <p style="margin:8px 0 16px">Agrega el primer miembro para comenzar</p>
-           <button class="btn btn-primary" onclick="openAdd()">+ Agregar primer miembro</button></div>`
-        : `<div class="all-ok"><div style="font-size:40px;margin-bottom:10px">✅</div>
-           <h3 style="font-weight:700;font-size:18px;color:#15803d">Todos los miembros están al día</h3>
-           <p style="color:#166534;font-size:14px;margin-top:4px">No hay alertas activas</p></div>`)
-      : `<div class="card">
-           <div class="card-title">Requieren atención</div>
-           ${alertMs.slice(0,8).map(m => alertRowHTML(m)).join("")}
-           ${alertMs.length > 8
-             ? `<p style="text-align:center;color:var(--s400);font-size:13px;margin-top:8px">
-                  ...y ${alertMs.length-8} más —
-                  <span style="color:var(--indigo);cursor:pointer;font-weight:600"
-                  onclick="switchTab('alerts')">ver todas</span></p>` : ""}
-         </div>`
-    }
-  `;
+        ? '<div class="empty"><div class="ei">👥</div><h3>Sin miembros todavía</h3><p style="margin:8px 0 16px">Agrega el primer miembro para comenzar</p><button class="btn btn-primary" onclick="openAdd()">+ Agregar primer miembro</button></div>'
+        : '<div class="all-ok"><div style="font-size:40px;margin-bottom:10px">✅</div><h3 style="font-weight:700;font-size:18px;color:#15803d">Todos los miembros al corriente</h3><p style="color:#166534;font-size:14px;margin-top:4px">No hay alertas activas</p></div>')
+      : '<div class="card"><div class="card-title">Requieren atención</div>' +
+          alertMs.slice(0,8).map(m => alertRowHTML(m)).join('') +
+          (alertMs.length > 8 ? '<p style="text-align:center;color:var(--s400);font-size:13px;margin-top:8px">...y ' + (alertMs.length-8) + ' más — <span style="color:var(--indigo);cursor:pointer;font-weight:600" onclick="switchTab(\'alerts\')">ver todas</span></p>' : '') +
+        '</div>');
 }
 
 function statCard(lbl,icon,val,color,sub) {
-  return `<div class="stat-card">
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <span class="stat-label">${lbl}</span><span style="font-size:20px">${icon}</span>
-    </div>
-    <div class="stat-value" style="color:${color}">${val}</div>
-    <div class="stat-sub">${sub}</div>
-  </div>`;
+  return '<div class="stat-card"><div style="display:flex;justify-content:space-between;align-items:center"><span class="stat-label">' + lbl + '</span><span style="font-size:20px">' + icon + '</span></div><div class="stat-value" style="color:' + color + '">' + val + '</div><div class="stat-sub">' + sub + '</div></div>';
 }
 function progRow(lbl,val,pct,color) {
-  return `<div class="prog-row">
-    <div class="prog-meta">
-      <span style="color:#475569;font-weight:500">${lbl}</span>
-      <span style="color:var(--s400)">${val} (${pct}%)</span>
-    </div>
-    <div class="prog-bg"><div class="prog-bar" style="width:${pct}%;background:${color}"></div></div>
-  </div>`;
+  return '<div class="prog-row"><div class="prog-meta"><span style="color:#475569;font-weight:500">' + lbl + '</span><span style="color:var(--s400)">' + val + ' (' + pct + '%)</span></div><div class="prog-bg"><div class="prog-bar" style="width:' + pct + '%;background:' + color + '"></div></div></div>';
 }
 
-// ══════════════════════════════════════════════
-// MEMBERS TABLE
-// ══════════════════════════════════════════════
 function renderMembers() {
   const q = busqueda.toLowerCase();
   const filtrado = miembros.filter(m => {
-    const mq = !q || (m.nombre||"").toLowerCase().includes(q) || (m.email||"").toLowerCase().includes(q);
+    const mq = !q || (m.nombre||'').toLowerCase().includes(q) || (m.email||'').toLowerCase().includes(q);
     const est = getEstado(m);
-    const mf = filtro === "all"
-      || (filtro === "paid"     && est === "paid")
-      || (filtro === "vencido"  && est === "vencido")
-      || (filtro === "pendiente"&& est === "pendiente")
-      || (filtro === "alerts"   && (est === "vencido" || est === "pendiente"));
+    const mf = filtro === 'all'
+      || (filtro === 'paid'      && est === 'paid')
+      || (filtro === 'vencido'   && est === 'vencido')
+      || (filtro === 'pendiente' && est === 'pendiente')
+      || (filtro === 'alerts'    && (est === 'vencido' || est === 'pendiente'));
     return mq && mf;
   });
 
@@ -433,203 +301,225 @@ function renderMembers() {
   if (pagina >= pages && pages > 0) pagina = pages - 1;
   const slice = filtrado.slice(pagina * POR_PAG, (pagina+1) * POR_PAG);
 
-  document.getElementById("tab-members").innerHTML = `
-    <div class="table-wrap">
-      <div class="table-header">
-        <input id="s-inp" value="${esc(busqueda)}" placeholder="Buscar nombre o email..."
-          style="padding:8px 12px;border-radius:9px;border:1.5px solid var(--s200);font-size:14px;min-width:220px;outline:none"
-          oninput="busqueda=this.value;pagina=0;renderMembers()"
-          onfocus="this.style.borderColor='var(--indigo)'" onblur="this.style.borderColor='var(--s200)'">
-        <div style="display:flex;gap:6px;flex-wrap:wrap">
-          ${chip("all","Todos")} ${chip("paid","Pagados")}
-          ${chip("pendiente","Pendientes")} ${chip("vencido","Vencidos")}
-          ${chip("alerts","Con alerta")}
-        </div>
-        <div style="margin-left:auto;display:flex;gap:8px;align-items:center">
-          <span style="font-size:12px;color:var(--s400)">${filtrado.length} de ${miembros.length}</span>
-          <button class="btn btn-ghost btn-sm" onclick="exportCSV()">↓ CSV</button>
-        </div>
-      </div>
-
-      ${slice.length === 0
-        ? `<div class="empty"><div class="ei">🔍</div><p>No hay miembros que coincidan</p></div>`
-        : `<div style="overflow-x:auto"><table>
-             <thead><tr>
-               <th>Nombre</th><th>Email</th><th>Tel</th><th>Día pago</th>
-               <th>Cuota</th><th>Estado</th><th>Retraso</th><th>Ingreso</th><th>Acciones</th>
-             </tr></thead>
-             <tbody>
-             ${slice.map(m => `<tr>
-               <td><strong style="color:var(--s900)">${esc(m.nombre||"—")}</strong></td>
-               <td style="color:var(--s500);font-size:12px">${esc(m.email||"—")}</td>
-               <td style="font-size:12px;color:var(--s500)">${esc(m.telefono||"—")}</td>
-               <td><span style="background:var(--s100);padding:3px 8px;border-radius:6px;font-size:12px;font-weight:600">Día ${m.dia_pago||"—"}</span></td>
-               <td style="font-weight:600">${fmt(m.cuota_mxn||m.cuota||0)}</td>
-               <td>${badgeHTML(m)}</td>
-               <td style="font-size:12px;color:var(--s500)">${m.dias_retraso||"0 días"}</td>
-               <td style="font-size:12px;color:var(--s400)">${m.fecha_ingreso||"—"}</td>
-               <td>
-                 <div style="display:flex;gap:5px">
-                   ${getEstado(m) !== "paid"
-                     ? `<button class="btn btn-green btn-sm" onclick="registrarPago('${m.id||m._row}','${esc(m.nombre||'')}')">✓ Pago</button>`
-                     : `<button class="btn btn-ghost btn-sm" style="opacity:.5" disabled>✓ Pagado</button>`}
-                   <button class="btn btn-ghost btn-sm" onclick='openEdit(${JSON.stringify(m).replace(/'/g, "&apos;")})'>✎</button>
-                   <button class="btn btn-red btn-sm" onclick="eliminar('${m.id||m._row}','${esc(m.nombre||'')}')">✕</button>
-                 </div>
-               </td>
-             </tr>`).join("")}
-             </tbody>
-           </table></div>`
-      }
-
-      ${pages > 1 ? `
-        <div class="pagination">
-          <button class="btn btn-ghost btn-sm" onclick="pagina=Math.max(0,pagina-1);renderMembers()" ${pagina===0?"disabled":""}>← Anterior</button>
-          <span style="font-size:13px;color:var(--s500)">Página ${pagina+1} de ${pages}</span>
-          <button class="btn btn-ghost btn-sm" onclick="pagina=Math.min(${pages-1},pagina+1);renderMembers()" ${pagina>=pages-1?"disabled":""}>Siguiente →</button>
-        </div>` : ""}
-    </div>`;
+  document.getElementById('tab-members').innerHTML =
+    '<div class="table-wrap">' +
+      '<div class="table-header">' +
+        '<input id="s-inp" value="' + esc(busqueda) + '" placeholder="Buscar nombre o email..." ' +
+          'style="padding:8px 12px;border-radius:9px;border:1.5px solid var(--s200);font-size:14px;min-width:220px;outline:none" ' +
+          'oninput="busqueda=this.value;pagina=0;renderMembers()" ' +
+          'onfocus="this.style.borderColor=\'var(--indigo)\'" onblur="this.style.borderColor=\'var(--s200)\'">' +
+        '<div style="display:flex;gap:6px;flex-wrap:wrap">' +
+          chip('all','Todos') + chip('paid','Al corriente') + chip('pendiente','Por vencer') + chip('vencido','Vencidos') + chip('alerts','Con alerta') +
+        '</div>' +
+        '<div style="margin-left:auto;display:flex;gap:8px;align-items:center">' +
+          '<span style="font-size:12px;color:var(--s400)">' + filtrado.length + ' de ' + miembros.length + '</span>' +
+          '<button class="btn btn-ghost btn-sm" onclick="exportCSV()">↓ CSV</button>' +
+        '</div>' +
+      '</div>' +
+      (slice.length === 0
+        ? '<div class="empty"><div class="ei">🔍</div><p>No hay miembros que coincidan</p></div>'
+        : '<div style="overflow-x:auto"><table><thead><tr>' +
+            '<th>Nombre</th><th>Email</th><th>Tel</th><th>Último pago</th><th>Próximo vence</th><th>Cuota</th><th>Estado</th><th>Días</th><th>Acciones</th>' +
+          '</tr></thead><tbody>' +
+          slice.map(m =>
+            '<tr>' +
+              '<td><strong style="color:var(--s900)">' + esc(m.nombre||'—') + '</strong></td>' +
+              '<td style="color:var(--s500);font-size:12px">' + esc(m.email||'—') + '</td>' +
+              '<td style="font-size:12px;color:var(--s500)">' + esc(m.telefono||'—') + '</td>' +
+              '<td style="font-size:12px;color:var(--s400)">' + (m.fecha_pago||'—') + '</td>' +
+              '<td style="font-size:12px;font-weight:600">' + (m.proximo_vencimiento||'—') + '</td>' +
+              '<td style="font-weight:600">' + fmt(m.cuota_mxn||m.cuota||0) + '</td>' +
+              '<td>' + badgeHTML(m) + '</td>' +
+              '<td style="font-size:12px;color:var(--s500)">' + (m.dias_retraso||'0 días') + '</td>' +
+              '<td><div style="display:flex;gap:5px">' +
+                (getEstado(m) !== 'paid'
+                  ? '<button class="btn btn-green btn-sm" onclick="openRegistrarPago(\'' + (m.id||m._row) + '\',\'' + esc(m.nombre||'') + '\')">✓ Pago</button>'
+                  : '<button class="btn btn-ghost btn-sm" style="opacity:.5" disabled>✓ Al día</button>') +
+                '<button class="btn btn-ghost btn-sm" onclick=\'openEdit(' + JSON.stringify(m).replace(/'/g,"&apos;") + ')\'>✎</button>' +
+                '<button class="btn btn-red btn-sm" onclick="eliminar(\'' + (m.id||m._row) + '\',\'' + esc(m.nombre||'') + '\')">✕</button>' +
+              '</div></td>' +
+            '</tr>'
+          ).join('') +
+          '</tbody></table></div>') +
+      (pages > 1
+        ? '<div class="pagination">' +
+            '<button class="btn btn-ghost btn-sm" onclick="pagina=Math.max(0,pagina-1);renderMembers()" ' + (pagina===0?'disabled':'') + '>← Anterior</button>' +
+            '<span style="font-size:13px;color:var(--s500)">Página ' + (pagina+1) + ' de ' + pages + '</span>' +
+            '<button class="btn btn-ghost btn-sm" onclick="pagina=Math.min(' + (pages-1) + ',pagina+1);renderMembers()" ' + (pagina>=pages-1?'disabled':'') + '>Siguiente →</button>' +
+          '</div>'
+        : '') +
+    '</div>';
 }
 
-function chip(v, l) {
-  return `<span class="chip${filtro===v?" active":""}" onclick="filtro='${v}';pagina=0;renderMembers()">${l}</span>`;
+function chip(val, lbl) {
+  return '<span class="chip' + (filtro===val?' active':'') + '" onclick="filtro=\'' + val + '\';pagina=0;renderMembers()">' + lbl + '</span>';
 }
 
-// ══════════════════════════════════════════════
-// ALERTS
-// ══════════════════════════════════════════════
 function renderAlerts() {
-  const vencidos = miembros.filter(m => getEstado(m) === "vencido");
-  const pendientes= miembros.filter(m => getEstado(m) === "pendiente");
+  const vencidos   = miembros.filter(m => getEstado(m) === 'vencido');
+  const pendientes = miembros.filter(m => getEstado(m) === 'pendiente');
 
-  document.getElementById("tab-alerts").innerHTML = `
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px">
-      <div style="background:#fef2f2;border-radius:14px;padding:16px 18px;border:1px solid #fca5a5">
-        <div style="font-size:11px;font-weight:700;color:#b91c1c;text-transform:uppercase;letter-spacing:.4px">Vencidos</div>
-        <div style="font-size:36px;font-weight:800;color:var(--red);margin-top:4px">${vencidos.length}</div>
-      </div>
-      <div style="background:#fffbeb;border-radius:14px;padding:16px 18px;border:1px solid #fde68a">
-        <div style="font-size:11px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:.4px">Pendientes</div>
-        <div style="font-size:36px;font-weight:800;color:var(--yellow);margin-top:4px">${pendientes.length}</div>
-      </div>
-    </div>
-
-    ${vencidos.length + pendientes.length === 0
-      ? `<div class="all-ok"><div style="font-size:40px;margin-bottom:10px">✅</div>
-         <h3 style="font-weight:700;font-size:18px;color:#15803d">Sin alertas activas</h3>
-         <p style="color:#166534;font-size:14px;margin-top:4px">Todos los miembros están al día</p></div>`
-      : `
-        ${vencidos.length > 0 ? `
-          <div class="card" style="border-color:#fca5a5">
-            <div class="card-title" style="color:#b91c1c">🚨 Vencidos (${vencidos.length})</div>
-            ${vencidos.map(m => alertRowHTML(m)).join("")}
-          </div>` : ""}
-        ${pendientes.length > 0 ? `
-          <div class="card" style="border-color:#fde68a">
-            <div class="card-title" style="color:#b45309">⏳ Pendientes (${pendientes.length})</div>
-            ${pendientes.map(m => alertRowHTML(m)).join("")}
-          </div>` : ""}
-      `
-    }`;
+  document.getElementById('tab-alerts').innerHTML =
+    '<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px">' +
+      '<div style="background:#fef2f2;border-radius:14px;padding:16px 18px;border:1px solid #fca5a5">' +
+        '<div style="font-size:11px;font-weight:700;color:#b91c1c;text-transform:uppercase;letter-spacing:.4px">Vencidos</div>' +
+        '<div style="font-size:36px;font-weight:800;color:var(--red);margin-top:4px">' + vencidos.length + '</div>' +
+      '</div>' +
+      '<div style="background:#fffbeb;border-radius:14px;padding:16px 18px;border:1px solid #fde68a">' +
+        '<div style="font-size:11px;font-weight:700;color:#b45309;text-transform:uppercase;letter-spacing:.4px">Por vencer</div>' +
+        '<div style="font-size:36px;font-weight:800;color:var(--yellow);margin-top:4px">' + pendientes.length + '</div>' +
+      '</div>' +
+    '</div>' +
+    (vencidos.length + pendientes.length === 0
+      ? '<div class="all-ok"><div style="font-size:40px;margin-bottom:10px">✅</div><h3 style="font-weight:700;font-size:18px;color:#15803d">Sin alertas activas</h3><p style="color:#166634;font-size:14px;margin-top:4px">Todos los miembros al corriente</p></div>'
+      : (vencidos.length > 0
+          ? '<div class="card" style="border-color:#fca5a5"><div class="card-title" style="color:#b91c1c">🚨 Vencidos (' + vencidos.length + ')</div>' + vencidos.map(m => alertRowHTML(m)).join('') + '</div>'
+          : '') +
+        (pendientes.length > 0
+          ? '<div class="card" style="border-color:#fde68a"><div class="card-title" style="color:#b45309">⏳ Por vencer (' + pendientes.length + ')</div>' + pendientes.map(m => alertRowHTML(m)).join('') + '</div>'
+          : ''));
 }
 
 function alertRowHTML(m) {
-  const cls = getEstado(m) === "vencido" ? "ar-red" : "ar-yellow";
-  return `<div class="alert-row ${cls}">
-    <div>
-      <div class="ar-name">${esc(m.nombre||"—")}</div>
-      <div class="ar-sub">Día ${m.dia_pago||"—"} · ${esc(m.email||"Sin email")} · ${fmt(m.cuota_mxn||m.cuota||0)} · ${m.dias_retraso||"0 días"} retraso</div>
-    </div>
-    <div style="display:flex;gap:8px">
-      <button class="btn btn-green btn-sm" onclick="registrarPago('${m.id||m._row}','${esc(m.nombre||'')}')">✓ Registrar pago</button>
-      <button class="btn btn-ghost btn-sm" onclick='openEdit(${JSON.stringify(m).replace(/'/g, "&apos;")})'>Editar</button>
-    </div>
-  </div>`;
+  const cls = getEstado(m) === 'vencido' ? 'ar-red' : 'ar-yellow';
+  return '<div class="alert-row ' + cls + '">' +
+    '<div><div class="ar-name">' + esc(m.nombre||'—') + '</div>' +
+    '<div class="ar-sub">Vence: ' + (m.proximo_vencimiento||'—') + ' · ' + esc(m.email||'Sin email') + ' · ' + fmt(m.cuota_mxn||m.cuota||0) + ' · ' + (m.dias_retraso||'0 días') + '</div></div>' +
+    '<div style="display:flex;gap:8px">' +
+      '<button class="btn btn-green btn-sm" onclick="openRegistrarPago(\'' + (m.id||m._row) + '\',\'' + esc(m.nombre||'') + '\')">✓ Registrar pago</button>' +
+      '<button class="btn btn-ghost btn-sm" onclick=\'openEdit(' + JSON.stringify(m).replace(/'/g,"&apos;") + ')\'>Editar</button>' +
+    '</div></div>';
 }
 
-// ══════════════════════════════════════════════
-// CRUD — con tus acciones exactas del GAS
-// ══════════════════════════════════════════════
-
-// ─── AGREGAR ─────────────────────────────────
+// ── AGREGAR ── formulario simplificado
 function openAdd() {
-  document.getElementById("modal-title").textContent = "Agregar nuevo miembro";
-  document.getElementById("modal-body").innerHTML = formHTML({});
-  document.getElementById("modal").style.display = "flex";
-  document.getElementById("f-ingreso").value = hoy();
-  document.getElementById("modal-save").onclick = submitAgregar;
+  document.getElementById('modal-title').textContent = 'Agregar nuevo miembro';
+  document.getElementById('modal-body').innerHTML =
+    '<div class="form-grid">' +
+      '<div class="ff"><label>Nombre completo *</label><input id="f-nombre" placeholder="Nombre del miembro"></div>' +
+      '<div class="ff h"><label>Teléfono</label><input id="f-tel" placeholder="8441234567"></div>' +
+      '<div class="ff h"><label>Email</label><input id="f-email" type="email" placeholder="email@ejemplo.com"></div>' +
+      '<div class="ff h"><label>Cuota (MXN) *</label><input id="f-cuota" type="number" min="0" placeholder="Ej: 500"></div>' +
+      '<div class="ff h"><label>Fecha de pago inicial</label><input id="f-fecha-pago" type="date" value="' + hoy() + '"></div>' +
+      '<div class="ff"><label>Notas</label><textarea id="f-notas" rows="2" placeholder="Notas adicionales..."></textarea></div>' +
+    '</div>' +
+    '<div class="info-hint">💡 El próximo vencimiento se calcula automático: fecha de pago + 30 días.</div>' +
+    '<div class="modal-footer">' +
+      '<button class="btn btn-ghost" onclick="closeModal()">Cancelar</button>' +
+      '<button id="modal-save" class="btn btn-primary">Guardar</button>' +
+    '</div>';
+  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('modal-save').onclick = submitAgregar;
 }
 
 async function submitAgregar() {
-  const datos = getFormData();
-  if (!datos.nombre) { toast("El nombre es requerido","error"); return; }
-  if (!datos.cuota) { toast("La cuota es obligatoria","error"); return; }
+  const datos = {
+    nombre:     v('f-nombre'),
+    email:      v('f-email'),
+    telefono:   v('f-tel'),
+    cuota:      parseFloat(v('f-cuota'))||0,
+    fecha_pago: v('f-fecha-pago') || hoy(),
+    pagado:     'Sí',
+    notas:      v('f-notas'),
+  };
+  if (!datos.nombre) { toast('El nombre es requerido','error'); return; }
+  if (!datos.cuota)  { toast('La cuota es obligatoria','error'); return; }
   closeModal(); saving(true);
   try {
-    const r = await gasPost({ accion: "agregar", datos });
+    const r = await gasPost({ accion: 'agregar', datos });
     if (r.error) throw new Error(r.error);
-    toast(`✅ ${datos.nombre} agregado`, "success");
+    toast('✅ ' + datos.nombre + ' agregado', 'success');
     await recargarSilencioso();
-  } catch(e) { toast("❌ " + e.message, "error"); }
+  } catch(e) { toast('❌ ' + e.message, 'error'); }
   saving(false);
 }
 
-// ─── EDITAR ──────────────────────────────────
+// ── EDITAR ── mantiene todos los campos para correcciones
 function openEdit(m) {
-  document.getElementById("modal-title").textContent = "Editar miembro";
-  document.getElementById("modal-body").innerHTML = formHTML(m);
-  document.getElementById("modal").style.display = "flex";
-  document.getElementById("modal-save").onclick = () => submitEditar(m.id || m._row, m.nombre);
+  const cuotaVal = m.cuota_mxn || m.cuota || '';
+  document.getElementById('modal-title').textContent = 'Editar miembro';
+  document.getElementById('modal-body').innerHTML =
+    '<div class="form-grid">' +
+      '<div class="ff"><label>Nombre completo *</label><input id="f-nombre" value="' + esc(m.nombre||'') + '"></div>' +
+      '<div class="ff h"><label>Teléfono</label><input id="f-tel" value="' + esc(m.telefono||'') + '"></div>' +
+      '<div class="ff h"><label>Email</label><input id="f-email" type="email" value="' + esc(m.email||'') + '"></div>' +
+      '<div class="ff h"><label>Cuota (MXN)</label><input id="f-cuota" type="number" min="0" value="' + cuotaVal + '"></div>' +
+      '<div class="ff h"><label>Fecha último pago</label><input id="f-fecha-pago" type="date" value="' + isoFecha(m.fecha_pago) + '"></div>' +
+      '<div class="ff"><label>Notas</label><textarea id="f-notas" rows="2">' + esc(m.notas||'') + '</textarea></div>' +
+    '</div>' +
+    '<div class="info-hint">💡 Al guardar se recalcula el próximo vencimiento (fecha de pago + 30 días).</div>' +
+    '<div class="modal-footer">' +
+      '<button class="btn btn-ghost" onclick="closeModal()">Cancelar</button>' +
+      '<button id="modal-save" class="btn btn-primary">Guardar cambios</button>' +
+    '</div>';
+  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('modal-save').onclick = () => submitEditar(m.id || m._row);
 }
 
-async function submitEditar(id, nombreOriginal) {
-  const datos = getFormData();
-  if (!datos.nombre) { toast("El nombre es requerido","error"); return; }
+async function submitEditar(id) {
+  const datos = {
+    nombre:     v('f-nombre'),
+    email:      v('f-email'),
+    telefono:   v('f-tel'),
+    cuota:      parseFloat(v('f-cuota'))||0,
+    fecha_pago: v('f-fecha-pago'),
+    notas:      v('f-notas'),
+  };
+  if (!datos.nombre) { toast('El nombre es requerido','error'); return; }
   closeModal(); saving(true);
   try {
-    const r = await gasPost({ accion: "actualizar", id, datos });
+    const r = await gasPost({ accion: 'actualizar', id, datos });
     if (r.error) throw new Error(r.error);
-    toast(`✅ ${datos.nombre} actualizado`, "success");
+    toast('✅ ' + datos.nombre + ' actualizado', 'success');
     await recargarSilencioso();
-  } catch(e) { toast("❌ " + e.message, "error"); }
+  } catch(e) { toast('❌ ' + e.message, 'error'); }
   saving(false);
 }
 
-// ─── ELIMINAR ────────────────────────────────
+// ── REGISTRAR PAGO ── con fecha editable
+function openRegistrarPago(id, nombre) {
+  document.getElementById('modal-title').textContent = '💰 Registrar pago — ' + nombre;
+  document.getElementById('modal-body').innerHTML =
+    '<div class="form-grid">' +
+      '<div class="ff"><label>Fecha de pago</label><input id="p-fecha" type="date" value="' + hoy() + '"></div>' +
+      '<div class="ff"><label>Notas (opcional)</label><input id="p-notas" placeholder="Ej: Pagó en efectivo"></div>' +
+    '</div>' +
+    '<div class="info-hint">💡 El próximo vencimiento será: fecha de pago + 30 días.</div>' +
+    '<div class="modal-footer">' +
+      '<button class="btn btn-ghost" onclick="closeModal()">Cancelar</button>' +
+      '<button id="modal-save" class="btn btn-green">✓ Confirmar pago</button>' +
+    '</div>';
+  document.getElementById('modal').style.display = 'flex';
+  document.getElementById('modal-save').onclick = () => submitRegistrarPago(id, nombre);
+}
+
+async function submitRegistrarPago(id, nombre) {
+  const datos = { fecha_pago: v('p-fecha') || hoy(), notas: v('p-notas') };
+  closeModal(); saving(true);
+  try {
+    const r = await gasPost({ accion: 'registrarPago', id, datos });
+    if (r.error) throw new Error(r.error);
+    toast('💰 Pago de ' + nombre + ' registrado', 'success');
+    await recargarSilencioso();
+  } catch(e) { toast('❌ ' + e.message, 'error'); }
+  saving(false);
+}
+
 async function eliminar(id, nombre) {
-  if (!confirm(`¿Eliminar a ${nombre}?`)) return;
+  if (!confirm('¿Eliminar a ' + nombre + '?')) return;
   saving(true);
   try {
-    const r = await gasPost({ accion: "eliminar", id });
+    const r = await gasPost({ accion: 'eliminar', id });
     if (r.error) throw new Error(r.error);
-    toast(`🗑 ${nombre} eliminado`, "info");
+    toast('🗑 ' + nombre + ' eliminado', 'info');
     await recargarSilencioso();
-  } catch(e) { toast("❌ " + e.message, "error"); }
+  } catch(e) { toast('❌ ' + e.message, 'error'); }
   saving(false);
 }
 
-// ─── REGISTRAR PAGO ──────────────────────────
-// Usa tu acción "registrarPago" exacta
-async function registrarPago(id, nombre) {
-  if (!confirm(`¿Registrar pago de ${nombre}?`)) return;
-  saving(true);
-  try {
-    const r = await gasPost({
-      accion: "registrarPago",
-      id,
-      datos: { fecha_pago: hoy() }
-    });
-    if (r.error) throw new Error(r.error);
-    toast(`💰 Pago de ${nombre} registrado`, "success");
-    await recargarSilencioso();
-  } catch(e) { toast("❌ " + e.message, "error"); }
-  saving(false);
-}
-
-// ─── RELOAD SILENCIOSO ───────────────────────
 async function recargarSilencioso() {
   try {
-    const [rL, rR] = await Promise.all([gasGet("listar"), gasGet("resumen")]);
+    const [rL, rR] = await Promise.all([gasGet('listar'), gasGet('resumen')]);
     if (!rL.error) miembros = rL.miembros || [];
     if (!rR.error) resumen  = rR;
   } catch(e) {}
@@ -637,99 +527,38 @@ async function recargarSilencioso() {
   renderTab(activeTab);
 }
 
-// ══════════════════════════════════════════════
-// FORM — campos que acepta tu normalizar()
-// ══════════════════════════════════════════════
-function formHTML(d) {
-  // Leer cuota — tu GAS la guarda como "cuota_mxn" en la hoja
-  const cuotaVal = d.cuota_mxn || d.cuota || "";
-  const pagadoSi = (d.pagado === "Sí" || d.pagado === true);
-  return `
-    <div class="form-grid">
-      <div class="ff"><label>Nombre completo *</label>
-        <input id="f-nombre" value="${esc(d.nombre||'')}" placeholder="Nombre del miembro"></div>
-      <div class="ff"><label>Email</label>
-        <input id="f-email" type="email" value="${esc(d.email||'')}" placeholder="email@ejemplo.com"></div>
-      <div class="ff h"><label>Teléfono</label>
-        <input id="f-tel" value="${esc(d.telefono||'')}" placeholder="8441234567"></div>
-      <div class="ff h"><label>Día de pago (1-31)</label>
-        <input id="f-dia" type="number" min="1" max="31" value="${d.dia_pago||1}"></div>
-      <div class="ff h"><label>Cuota (MXN) *</label>
-        <input id="f-cuota" type="number" min="0" value="${cuotaVal}" placeholder="Ej: 500"></div>
-      <div class="ff h"><label>Fecha de ingreso</label>
-        <input id="f-ingreso" type="date" value="${isoFecha(d.fecha_ingreso)}"></div>
-      <div class="ff h"><label>¿Pagado?</label>
-        <select id="f-pagado">
-          <option value="No"  ${!pagadoSi?"selected":""}>No</option>
-          <option value="Sí"  ${pagadoSi?"selected":""}>Sí</option>
-        </select></div>
-      <div class="ff h"><label>Fecha de pago</label>
-        <input id="f-fecha-pago" type="date" value="${isoFecha(d.fecha_pago)}"></div>
-      <div class="ff"><label>Notas</label>
-        <textarea id="f-notas" rows="2" placeholder="Notas adicionales...">${esc(d.notas||'')}</textarea></div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-ghost" onclick="closeModal()">Cancelar</button>
-      <button id="modal-save" class="btn btn-primary">Guardar</button>
-    </div>`;
-}
-
-function getFormData() {
-  return {
-    nombre:       v("f-nombre"),
-    email:        v("f-email"),
-    telefono:     v("f-tel"),
-    dia_pago:     parseInt(v("f-dia"))||1,
-    cuota:        parseFloat(v("f-cuota"))||0,
-    fecha_ingreso:v("f-ingreso"),
-    pagado:       v("f-pagado"),
-    fecha_pago:   v("f-fecha-pago"),
-    notas:        v("f-notas"),
-  };
-}
-
-// ══════════════════════════════════════════════
-// EXPORT CSV
-// ══════════════════════════════════════════════
 function exportCSV() {
-  const cols = ["nombre","email","telefono","dia_pago","cuota_mxn","estado","dias_retraso","fecha_ingreso","fecha_pago","notas"];
-  const rows = [cols, ...miembros.map(m => cols.map(c => `"${String(m[c]||"").replace(/"/g,'""')}"`))] ;
-  const a = document.createElement("a");
-  a.href = URL.createObjectURL(new Blob([rows.map(r=>r.join(",")).join("\n")], {type:"text/csv;charset=utf-8;"}));
-  a.download = "miembros_templo.csv";
+  const cols = ['nombre','email','telefono','cuota_mxn','fecha_pago','proximo_vencimiento','estado','dias_retraso','notas'];
+  const rows = [cols, ...miembros.map(m => cols.map(c => '"' + String(m[c]||'').replace(/"/g,'""') + '"'))];
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(new Blob([rows.map(r=>r.join(',')).join('\n')], {type:'text/csv;charset=utf-8;'}));
+  a.download = 'miembros_templo.csv';
   a.click();
-  toast("📊 CSV exportado", "success");
+  toast('📊 CSV exportado', 'success');
 }
 
-// ══════════════════════════════════════════════
-// UTILS
-// ══════════════════════════════════════════════
-function closeModal() { document.getElementById("modal").style.display = "none"; }
-function saving(v)    { document.getElementById("saving-ind").style.display = v ? "flex" : "none"; }
-function v(id)        { return document.getElementById(id)?.value || ""; }
-function esc(s)       { return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;"); }
+function closeModal() { document.getElementById('modal').style.display = 'none'; }
+function saving(on)   { document.getElementById('saving-ind').style.display = on ? 'flex' : 'none'; }
+function v(id)        { return document.getElementById(id)?.value || ''; }
+function esc(s)       { return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
 function hoy()        { return new Date().toISOString().slice(0,10); }
-function fmt(n)       { return `$${Number(n||0).toLocaleString("es-MX")} MXN`; }
+function fmt(n)       { return '$' + Number(n||0).toLocaleString('es-MX') + ' MXN'; }
 function isoFecha(f)  {
-  if (!f) return "";
+  if (!f) return '';
   if (/^\d{4}-\d{2}-\d{2}$/.test(f)) return f;
-  // dd/MM/yyyy → yyyy-MM-dd
-  const p = String(f).split("/");
-  if (p.length === 3) return `${p[2]}-${p[1].padStart(2,"0")}-${p[0].padStart(2,"0")}`;
-  return "";
+  const p = String(f).split('/');
+  if (p.length === 3) return p[2] + '-' + p[1].padStart(2,'0') + '-' + p[0].padStart(2,'0');
+  return '';
 }
-
-function toast(msg, type="info") {
+function toast(msg, type) {
+  type = type || 'info';
   const id = Math.random().toString(36).slice(2);
-  const el = document.createElement("div");
-  el.className = `toast t-${type}`; el.textContent = msg; el.id = id;
-  document.getElementById("toast-container").appendChild(el);
-  setTimeout(()=>{ const t=document.getElementById(id); if(t) t.remove(); }, 3500);
+  const el = document.createElement('div');
+  el.className = 'toast t-' + type; el.textContent = msg; el.id = id;
+  document.getElementById('toast-container').appendChild(el);
+  setTimeout(function(){ var t=document.getElementById(id); if(t) t.remove(); }, 3500);
 }
 
-// ══════════════════════════════════════════════
-// START
-// ══════════════════════════════════════════════
 init();
 </script>
 </body>
